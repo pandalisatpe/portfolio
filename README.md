@@ -6,7 +6,7 @@ My Portfolio Site: [check me](https://)
 
 Currently I primarily specialise in Front-End Development, although I come from **UI/UX Design** background and also engage in **branding, business and event curation**. I have more than **6+ years** of experience in various project and worked with different clients.
 
-I'm passionate about ~user interface design and Front-End development~ 
+I'm passionate about **user interface design and Front-End development** 
  focused on user engagement by building strategy and considering the balance between *user goals, business goals and technical feasibility*.
 
 Design is about problem solving.  So I enjoy solving the puzzles and turning complex problems into simple,  creativity, and intuitive interface design. Striving for efficient, beautiful code, and delivered value.
