@@ -386,7 +386,7 @@ template {
   font-weight: 400;
   src: url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"); }
 h1, h2, h3, h4 {
-  font-family: 'Liquide'; }
+  font-family: "Liquide", "Ruda"; }
 
 h1 {
   font-size: 40px; }
@@ -731,8 +731,9 @@ nav {
   color: #0C0F81;
   text-align: center;
   margin: 2em auto;
-  font-family: 'Liquide';
+  font-family: "Liquide", "Ruda";
   letter-spacing: .1em;
+  text-transform: uppercase;
   background: linear-gradient(0deg, transparent 0%, transparent 40%, #E2D6FD 40%, #E2D6FD 60%, transparent 60%, transparent 100%); }
 
 .section-title-dark {
@@ -741,8 +742,9 @@ nav {
   color: #FFF;
   text-align: center;
   margin: 2em auto;
-  font-family: 'Liquide';
+  font-family: "Liquide", "Ruda";
   letter-spacing: .1em;
+  text-transform: uppercase;
   background: linear-gradient(0deg, transparent 0%, transparent 40%, #0C0F81 40%, #0C0F81 60%, transparent 60%, transparent 100%); }
 
 .case-slider {
@@ -1343,7 +1345,8 @@ footer {
     font-size: 5em;
     font-family: "Liquide", "Ruda";
     color: #896BDE;
-    margin-bottom: .4em; }
+    margin-bottom: .4em;
+    text-transform: uppercase; }
     @media all and (min-width: 321px) and (max-width: 425px) {
       .hero-title .my-name {
         font-size: 3.5em; } }
@@ -1959,9 +1962,10 @@ footer {
 .profile-name {
   font-size: 2em;
   margin-bottom: 1em;
-  font-family: "Liquide"; }
+  font-family: "Liquide", "Ruda"; }
 
 .profile-education {
+  font-family: "Liquide", "Ruda";
   margin-bottom: .5em; }
 
 .work-experience {
