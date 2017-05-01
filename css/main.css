@@ -1369,7 +1369,7 @@ footer {
   margin: 10em 0 0 68%; }
   @media all and (min-width: 321px) and (max-width: 425px) {
     .hero-bg-panda {
-      margin: 10em 0 0 60%; } }
+      margin: 10em 0 0 58%; } }
   @media all and (max-width: 320px) {
     .hero-bg-panda {
       margin: 8em 0 0 53%; } }
@@ -1541,7 +1541,7 @@ footer {
       height: 52em; } }
   @media all and (min-width: 321px) and (max-width: 425px) {
     .my-service {
-      height: 54em; } }
+      height: 56em; } }
   @media all and (max-width: 320px) {
     .my-service {
       height: 60em; } }
