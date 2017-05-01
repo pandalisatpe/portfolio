@@ -535,7 +535,7 @@ nav {
       display: inline-block;
       text-align: center;
       margin: 0 1em;
-      font-family: 'Liquide';
+      font-family: "Liquide", "Ruda";
       font-size: .7em; }
       .main-nav ul li a {
         text-decoration: none;
@@ -581,7 +581,7 @@ nav {
   		text-align: center;
   		width: 100%;
   		margin: 1.4em 0;
-  		font-family: 'Liquide';
+  		font-family: $font;
   		font-size: 1.7em;
   		a {
   			text-decoration: none;
@@ -686,7 +686,7 @@ nav {
       display: inline-block;
       text-align: center;
       margin: 0 1em;
-      font-family: 'Liquide';
+      font-family: "Liquide", "Ruda";
       font-size: .7em; }
       #sticky-nav > nav ul li a {
         text-decoration: none;
@@ -803,7 +803,7 @@ nav {
   float: left;
   width: 50%;
   height: 2em;
-  font-family: 'Liquide';
+  font-family: "Liquide", "Ruda";
   font-size: 2em;
   margin-top: 2.2em; }
   @media all and (min-width: 960px) and (max-width: 1024px) {
@@ -1020,7 +1020,7 @@ nav {
   top: 1em;
   width: 10%;
   height: 3em;
-  font-family: 'Liquide';
+  font-family: 'Roboto';
   color: #896BDE;
   font-size: 1.3em; }
   @media all and (min-width: 960px) and (max-width: 1024px) {
@@ -1341,7 +1341,7 @@ footer {
       margin-left: 5%; } }
   .hero-title .my-name {
     font-size: 5em;
-    font-family: 'Liquide';
+    font-family: "Liquide", "Ruda";
     color: #896BDE;
     margin-bottom: .4em; }
     @media all and (min-width: 321px) and (max-width: 425px) {
@@ -1378,7 +1378,7 @@ footer {
   width: 3em;
   height: 3em;
   font-size: 2.2em;
-  font-family: 'Liquide';
+  font-family: "Liquide", "Ruda";
   color: #FFF;
   background: #E2D6FD;
   padding: 1em;
@@ -1491,7 +1491,7 @@ footer {
     margin: .6em 15%;
     text-align: center;
     font-size: 2em;
-    font-family: 'Liquide';
+    font-family: "Liquide", "Ruda";
     color: #FFF; }
     @media all and (min-width: 769px) and (max-width: 959px) {
       .belief-content .belief-text {
@@ -1624,7 +1624,7 @@ footer {
       margin-top: 1em;
       padding: .5em 0.7em; } }
   .service-item .service-header {
-    font-family: 'Liquide';
+    font-family: "Liquide", "Ruda";
     font-size: 1.1em !important;
     letter-spacing: .1em; }
     @media all and (min-width: 640px) and (max-width: 768px) {
@@ -1700,7 +1700,7 @@ footer {
     width: 60%;
     text-align: center;
     margin-left: 50%;
-    font-family: 'Liquide';
+    font-family: "Liquide", "Ruda";
     color: #896BDE;
     font-size: .7em; }
     @media all and (min-width: 960px) and (max-width: 1024px) {
@@ -2001,7 +2001,7 @@ footer {
   .experience .work-company {
     float: left;
     width: 80%;
-    font-family: 'Liquide';
+    font-family: "Liquide", "Ruda";
     font-size: .9em;
     margin-bottom: .3em; }
   .experience .work-content {
