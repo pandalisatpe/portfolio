@@ -384,7 +384,7 @@ template {
   font-family: 'Roboto';
   font-style: 'regular';
   font-weight: 400;
-  src: url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700,900"); }
+  src: url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"); }
 h1, h2, h3, h4 {
   font-family: 'Liquide'; }
 
@@ -451,16 +451,16 @@ body {
   color: #222222; }
   @media all and (min-width: 640px) and (max-width: 768px) {
     body {
-      font-size: 18px; } }
+      font-size: 19px; } }
   @media all and (min-width: 426px) and (max-width: 639px) {
     body {
-      font-size: 16px; } }
+      font-size: 18px; } }
   @media all and (min-width: 321px) and (max-width: 425px) {
     body {
-      font-size: 16px; } }
+      font-size: 18px; } }
   @media all and (max-width: 320px) {
     body {
-      font-size: 16px; } }
+      font-size: 18px; } }
 
 /* Each Module */
 .brand {
@@ -570,7 +570,35 @@ nav {
   width: 100%;
   float: left;
   position: absolute;
-  padding: 1.5em 2em; }
+  padding: 1.5em 2em;
+  /*
+  ul.mobile-link {
+  	width: 100%;
+  	text-align: center;
+  	padding: 1em 20% 0;
+  	li {
+  		display: block;
+  		text-align: center;
+  		width: 100%;
+  		margin: 1.4em 0;
+  		font-family: 'Liquide';
+  		font-size: 1.7em;
+  		a {
+  			text-decoration: none;
+  			color: #FFF;
+  		}
+  		a:hover {
+  			color: $dark-blue;
+  		}
+  		&:hover{				
+  			background: linear-gradient(0deg,
+  				transparent 0%, transparent 30%,
+  				$light-purple 30%, $light-purple 70%, 
+  				transparent 70%, transparent 100%);
+  		}
+  	}
+  }
+  */ }
   .mobile-nav .navicon {
     text-align: right;
     color: #FFF;
@@ -581,22 +609,15 @@ nav {
     display: none; }
   .mobile-nav ul.mobile-link {
     width: 100%;
-    text-align: center;
-    padding: 1em 20% 0; }
+    text-align: center; }
     .mobile-nav ul.mobile-link li {
       display: block;
       text-align: center;
       width: 100%;
       margin: 1.4em 0;
-      font-family: 'Liquide';
-      font-size: 1.7em; }
-      .mobile-nav ul.mobile-link li a {
-        text-decoration: none;
-        color: #FFF; }
-      .mobile-nav ul.mobile-link li a:hover {
-        color: #0C0F81; }
-      .mobile-nav ul.mobile-link li:hover {
-        background: linear-gradient(0deg, transparent 0%, transparent 30%, #E2D6FD 30%, #E2D6FD 70%, transparent 70%, transparent 100%); }
+      font-size: 1.7em;
+      line-height: 2em;
+      color: #FFF; }
   @media all and (min-width: 1025px) and (max-width: 1440px) {
     .mobile-nav {
       display: none; } }
@@ -729,59 +750,54 @@ nav {
   width: 100%;
   position: absolute; }
 
-.swiper-wrapper {
+.wrapper {
   width: 80%;
   margin: 0 10%; }
   @media all and (min-width: 321px) and (max-width: 425px) {
-    .swiper-wrapper {
+    .wrapper {
       width: 90%;
       margin: 0 5%; } }
   @media all and (max-width: 320px) {
-    .swiper-wrapper {
+    .wrapper {
       width: 90%;
       margin: 0 5%; } }
 
 .case-item {
-  width: 84%;
-  height: 23em;
-  margin: 0 8%; }
+  width: 90%;
+  height: 25em;
+  margin: 0 5%; }
   @media all and (min-width: 321px) and (max-width: 425px) {
     .case-item {
-      width: 80%;
-      height: 29em;
-      margin: 0 5%; } }
+      height: 29em; } }
   @media all and (max-width: 320px) {
     .case-item {
-      width: 80%;
-      height: 28em;
-      margin: 0 5%; } }
+      height: 30em; } }
 
 .case-img {
   float: left;
   width: 40%;
-  height: 22em;
+  height: 25em;
   object-fit: cover;
-  margin: 1em 2em 0 0; }
+  padding: 1em 2em 0 0; }
   @media all and (min-width: 769px) and (max-width: 959px) {
     .case-img {
-      height: 11em; } }
+      height: 13em; } }
   @media all and (min-width: 640px) and (max-width: 768px) {
     .case-img {
       height: 11em; } }
   @media all and (min-width: 426px) and (max-width: 639px) {
     .case-img {
-      height: 11em;
-      margin: 1em 1em 0 0; } }
+      height: 11em; } }
   @media all and (min-width: 321px) and (max-width: 425px) {
     .case-img {
-      width: 90%;
+      width: 100%;
       height: 7em;
-      margin: .5em 5%; } }
+      padding: 0 1em; } }
   @media all and (max-width: 320px) {
     .case-img {
-      width: 90%;
+      width: 100%;
       height: 7em;
-      margin: .5em 5%; } }
+      padding: 0 1em; } }
 
 .case-name {
   float: left;
@@ -790,28 +806,41 @@ nav {
   font-family: 'Liquide';
   font-size: 2em;
   margin-top: 2.2em; }
+  @media all and (min-width: 960px) and (max-width: 1024px) {
+    .case-name {
+      width: 60%;
+      margin-top: 1.2em; } }
   @media all and (min-width: 769px) and (max-width: 959px) {
     .case-name {
-      margin-top: 1.2em; } }
+      font-size: 1.8em;
+      width: 60%;
+      margin-top: 2.2em; } }
   @media all and (min-width: 640px) and (max-width: 768px) {
     .case-name {
+      font-size: 1.6em;
+      width: 60%;
       margin-top: 1.2em; } }
   @media all and (min-width: 426px) and (max-width: 639px) {
     .case-name {
+      font-size: 1.8em;
+      width: 60%;
       margin-top: 1.2em; } }
   @media all and (min-width: 321px) and (max-width: 425px) {
     .case-name {
+      text-align: center;
+      font-size: 1.5em;
       width: 100%;
-      margin-top: .2em; } }
+      margin-top: 1em; } }
   @media all and (max-width: 320px) {
     .case-name {
+      text-align: center;
       width: 100%;
       font-size: 1.5em;
-      margin-top: .2em; } }
+      margin-top: 1em; } }
 
 .case-type {
   float: left;
-  width: 30%;
+  width: 50%;
   height: 2em;
   font-size: .8em; }
   @media all and (min-width: 769px) and (max-width: 959px) {
@@ -823,12 +852,13 @@ nav {
   @media all and (min-width: 426px) and (max-width: 639px) {
     .case-type {
       margin-top: 1.5em;
-      width: 40%; } }
+      width: 50%; } }
   @media all and (min-width: 321px) and (max-width: 425px) {
     .case-type {
       width: 85%;
       color: #FFF;
-      margin-left: 5%; } }
+      margin-left: 5%;
+      margin-top: 1.7em; } }
   @media all and (max-width: 320px) {
     .case-type {
       width: 85%;
@@ -838,12 +868,12 @@ nav {
 
 .case-tech {
   float: left;
-  width: 30%;
+  width: 50%;
   height: 2em;
   font-size: .8em; }
   @media all and (min-width: 426px) and (max-width: 639px) {
     .case-tech {
-      width: 40%; } }
+      width: 50%; } }
   @media all and (min-width: 321px) and (max-width: 425px) {
     .case-tech {
       width: 85%;
@@ -857,30 +887,34 @@ nav {
 
 .case-description {
   float: left;
-  width: 40%;
-  height: 6.5em;
+  width: 60%;
   font-size: .9em;
   font-weight: 300;
   line-height: 1.2em;
   color: #f8f8f8;
-  margin: 1.5em 1.5em; }
+  padding: 3.5em 1.5em 1em; }
   @media all and (min-width: 769px) and (max-width: 959px) {
     .case-description {
-      width: 80%; } }
+      width: 100%;
+      padding: 1.5em 1.5em 1em; } }
   @media all and (min-width: 640px) and (max-width: 768px) {
     .case-description {
-      width: 80%; } }
+      width: 100%;
+      padding: 1.5em 1.5em 1em; } }
   @media all and (min-width: 426px) and (max-width: 639px) {
     .case-description {
-      width: 75%; } }
+      width: 100%;
+      padding: 1.5em 1.5em 1em; } }
   @media all and (min-width: 321px) and (max-width: 425px) {
     .case-description {
-      width: 90%;
-      margin: .5em 1%; } }
+      width: 98%;
+      margin: .5em 1%;
+      padding: 0; } }
   @media all and (max-width: 320px) {
     .case-description {
       width: 100%;
-      margin: .5em 0%; } }
+      margin: .5em 0%;
+      padding: 0; } }
 
 .view-more {
   float: left;
@@ -901,15 +935,15 @@ nav {
   @media all and (min-width: 769px) and (max-width: 959px) {
     .view-more {
       width: 20%;
-      margin: -1.5em 40% 0; } }
+      margin: 1em 40% 0; } }
   @media all and (min-width: 640px) and (max-width: 768px) {
     .view-more {
-      width: 20%;
-      margin: -1.5em 40% 0; } }
+      width: 26%;
+      margin: 1em 37% 0; } }
   @media all and (min-width: 426px) and (max-width: 639px) {
     .view-more {
-      width: 26%;
-      margin: 0 37%; } }
+      width: 34%;
+      margin: 1em 33% 0; } }
   @media all and (min-width: 321px) and (max-width: 425px) {
     .view-more {
       width: 40%;
@@ -925,7 +959,7 @@ nav {
   height: 5em;
   margin: 7em 5% 0;
   font-size: 1.8em;
-  top: 50%; }
+  top: 45%; }
   .slider-button:hover {
     cursor: pointer; }
   @media all and (min-width: 960px) and (max-width: 1024px) {
@@ -999,7 +1033,7 @@ nav {
   @media all and (min-width: 640px) and (max-width: 768px) {
     .swiper-pagination {
       right: 15%;
-      top: 90%; } }
+      top: 85%; } }
   @media all and (min-width: 426px) and (max-width: 639px) {
     .swiper-pagination {
       right: 16%;
@@ -1035,7 +1069,7 @@ header {
   z-index: 800;
   width: 100%;
   height: 6em;
-  background: #f8f8f8;
+  background: rgba(248, 248, 248, 0.3);
   padding: 0; }
   @media all and (min-width: 640px) and (max-width: 768px) {
     header {
@@ -1136,7 +1170,7 @@ footer {
   z-index: 10;
   width: 100%;
   height: 14em;
-  background: #0C0F81;
+  background: linear-gradient(0deg, #0C0F81 0%, #0C0F81 60%, transparent 60%, transparent 100%);
   overflow: hidden; }
   .footer-bg:before {
     content: "";
@@ -1415,7 +1449,7 @@ footer {
       height: 35em; } }
   @media all and (max-width: 320px) {
     .my-portfolio {
-      height: 35em; } }
+      height: 36em; } }
 
 .portfolio-bg {
   position: absolute;
@@ -1443,7 +1477,7 @@ footer {
   @media all and (max-width: 320px) {
     .portfolio-bg {
       height: 21em;
-      margin-top: -16.9em; } }
+      margin-top: -17.9em; } }
 
 .my-belief {
   width: 100%;
@@ -1468,22 +1502,22 @@ footer {
       .belief-content .belief-text {
         width: 80%;
         margin: .6em 10%;
-        font-size: 2em; } }
+        font-size: 1.8em; } }
     @media all and (min-width: 426px) and (max-width: 639px) {
       .belief-content .belief-text {
         width: 90%;
         margin: .6em 5%;
-        font-size: 1.8em; } }
+        font-size: 1.5em; } }
     @media all and (min-width: 321px) and (max-width: 425px) {
       .belief-content .belief-text {
         width: 96%;
         margin: .6em 2%;
-        font-size: 1.5em; } }
+        font-size: 1.4em; } }
     @media all and (max-width: 320px) {
       .belief-content .belief-text {
         width: 98%;
         margin: .6em 1%;
-        font-size: 1.3em; } }
+        font-size: 1.1em; } }
 
 .belief-bg {
   z-index: 10;
@@ -1499,18 +1533,18 @@ footer {
 
 .my-service {
   width: 100%;
-  height: 33em;
+  height: 34em;
   background: #896BDE;
   background: linear-gradient(0deg, #E2D6FD 0%, #E2D6FD 80%, #FFF 80%, #FFF 100%); }
   @media all and (min-width: 426px) and (max-width: 639px) {
     .my-service {
-      height: 40em; } }
+      height: 52em; } }
   @media all and (min-width: 321px) and (max-width: 425px) {
     .my-service {
-      height: 46em; } }
+      height: 54em; } }
   @media all and (max-width: 320px) {
     .my-service {
-      height: 52em; } }
+      height: 60em; } }
 
 .service-content {
   z-index: 50;
@@ -1559,38 +1593,52 @@ footer {
   height: 10em;
   float: left;
   margin-top: 1.5em;
-  padding: 2em 2em; }
+  padding: 2em 1.5em; }
+  @media all and (min-width: 960px) and (max-width: 1024px) {
+    .service-item {
+      padding: 2em 1.2em; } }
   @media all and (min-width: 769px) and (max-width: 959px) {
     .service-item {
-      width: 40%;
+      height: 11em;
       padding: 2em 1.5em; } }
   @media all and (min-width: 640px) and (max-width: 768px) {
     .service-item {
-      width: 40%;
       margin-top: 1.5em;
+      height: 11em;
       padding: 1.5em 0.7em; } }
   @media all and (min-width: 426px) and (max-width: 639px) {
     .service-item {
       width: 100%;
-      height: 7em;
       margin-top: 1em;
       padding: .5em 0.7em; } }
   @media all and (min-width: 321px) and (max-width: 425px) {
     .service-item {
       width: 100%;
-      height: 8em;
+      height: 11em;
       margin-top: 1.5em;
       padding: .5em 0.7em; } }
   @media all and (max-width: 320px) {
     .service-item {
       width: 100%;
-      height: 10em;
+      height: 12em;
       margin-top: 1em;
       padding: .5em 0.7em; } }
   .service-item .service-header {
     font-family: 'Liquide';
     font-size: 1.1em !important;
     letter-spacing: .1em; }
+    @media all and (min-width: 640px) and (max-width: 768px) {
+      .service-item .service-header {
+        font-size: 1em !important; } }
+    @media all and (min-width: 426px) and (max-width: 639px) {
+      .service-item .service-header {
+        font-size: 1em !important; } }
+    @media all and (min-width: 321px) and (max-width: 425px) {
+      .service-item .service-header {
+        font-size: 1em !important; } }
+    @media all and (max-width: 320px) {
+      .service-item .service-header {
+        font-size: 1em !important; } }
   .service-item .service-text {
     font-size: .9em;
     font-weight: 300;
@@ -1618,21 +1666,21 @@ footer {
     background: linear-gradient(-90deg, #f8f8f8 0%, #f8f8f8 50%, transparent 50%, transparent 100%); }
   @media all and (min-width: 769px) and (max-width: 959px) {
     .service-bg {
-      height: 18em; } }
+      height: 19em; } }
   @media all and (min-width: 640px) and (max-width: 768px) {
     .service-bg {
       height: 19em; } }
   @media all and (min-width: 426px) and (max-width: 639px) {
     .service-bg {
-      height: 21.3em; } }
+      height: 27.3em; } }
   @media all and (min-width: 321px) and (max-width: 425px) {
     .service-bg {
-      height: 24.6em; }
+      height: 30.6em; }
       .service-bg.right {
         background: linear-gradient(-90deg, #FFF 0%, #FFF 50%, transparent 50%, transparent 100%); } }
   @media all and (max-width: 320px) {
     .service-bg {
-      height: 28em; }
+      height: 32em; }
       .service-bg.right {
         background: linear-gradient(-90deg, #FFF 0%, #FFF 50%, transparent 50%, transparent 100%); } }
 
