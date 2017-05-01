@@ -1398,7 +1398,7 @@ footer {
       margin-left: 1em; } }
   @media all and (max-width: 320px) {
     .hero-bg-panda-hi {
-      transform: scale(0.8);
+      transform: scale(0.7);
       margin-left: 1em; } }
   .hero-bg-panda-hi:before {
     content: '';
@@ -2007,6 +2007,7 @@ footer {
     width: 80%;
     font-family: "Liquide", "Ruda";
     font-size: .9em;
+    font-weight: 900;
     margin-bottom: .3em; }
   .experience .work-content {
     float: left;
