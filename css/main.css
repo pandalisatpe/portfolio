@@ -386,7 +386,7 @@ template {
   font-weight: 400;
   src: url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"); }
 h1, h2, h3, h4 {
-  font-family: "Liquide", "Ruda"; }
+  font-family: "Signika Negative", "Rambla", sans-serif; }
 
 h1 {
   font-size: 40px; }
@@ -522,21 +522,22 @@ nav {
     text-align: right;
     padding-top: 2em; }
     .main-nav ul li:nth-child(1) {
-      width: 8em; }
+      width: 7.5em; }
     .main-nav ul li:nth-child(2) {
-      width: 6em; }
-    .main-nav ul li:nth-child(3) {
       width: 5.5em; }
+    .main-nav ul li:nth-child(3) {
+      width: 5em; }
     .main-nav ul li:nth-child(4) {
-      width: 7em; }
+      width: 6.5em; }
     .main-nav ul li:nth-child(5) {
-      width: 4.4em; }
+      width: 4em; }
     .main-nav ul li {
       display: inline-block;
       text-align: center;
       margin: 0 1em;
-      font-family: "Liquide", "Ruda";
-      font-size: .7em; }
+      font-family: "Signika Negative", "Rambla", sans-serif;
+      font-size: .9em;
+      text-transform: uppercase; }
       .main-nav ul li a {
         text-decoration: none;
         color: #222222; }
@@ -544,12 +545,20 @@ nav {
         color: #0C0F81; }
       .main-nav ul li:hover {
         background: linear-gradient(0deg, transparent 0%, transparent 30%, #E2D6FD 30%, #E2D6FD 70%, transparent 70%, transparent 100%); }
-  @media all and (min-width: 769px) and (max-width: 959px) {
+  @media all and (min-width: 960px) and (max-width: 1024px) {
     .main-nav ul li {
       margin: 0 0.7em; } }
+  @media all and (min-width: 769px) and (max-width: 959px) {
+    .main-nav {
+      padding: 0 5% 0 1%; }
+      .main-nav ul li {
+        margin: 0 0.4em; } }
   @media all and (min-width: 640px) and (max-width: 768px) {
-    .main-nav ul li {
-      margin: 0 0.3em; } }
+    .main-nav {
+      padding: 0.5em 1% 0;
+      font-size: .9em; }
+      .main-nav ul li {
+        margin: 0 0.3em; } }
   @media all and (min-width: 426px) and (max-width: 639px) {
     .main-nav {
       display: none; } }
@@ -615,7 +624,7 @@ nav {
       text-align: center;
       width: 100%;
       margin: 1.4em 0;
-      font-size: 1.7em;
+      font-size: 1.2em;
       line-height: 2em;
       color: #FFF; }
   @media all and (min-width: 1025px) and (max-width: 1440px) {
@@ -686,7 +695,7 @@ nav {
       display: inline-block;
       text-align: center;
       margin: 0 1em;
-      font-family: "Liquide", "Ruda";
+      font-family: "Signika Negative", "Rambla", sans-serif;
       font-size: .7em; }
       #sticky-nav > nav ul li a {
         text-decoration: none;
@@ -731,7 +740,7 @@ nav {
   color: #0C0F81;
   text-align: center;
   margin: 2em auto;
-  font-family: "Liquide", "Ruda";
+  font-family: "Signika Negative", "Rambla", sans-serif;
   letter-spacing: .1em;
   text-transform: uppercase;
   background: linear-gradient(0deg, transparent 0%, transparent 40%, #E2D6FD 40%, #E2D6FD 60%, transparent 60%, transparent 100%); }
@@ -742,7 +751,7 @@ nav {
   color: #FFF;
   text-align: center;
   margin: 2em auto;
-  font-family: "Liquide", "Ruda";
+  font-family: "Signika Negative", "Rambla", sans-serif;
   letter-spacing: .1em;
   text-transform: uppercase;
   background: linear-gradient(0deg, transparent 0%, transparent 40%, #0C0F81 40%, #0C0F81 60%, transparent 60%, transparent 100%); }
@@ -805,7 +814,7 @@ nav {
   float: left;
   width: 50%;
   height: 2em;
-  font-family: "Liquide", "Ruda";
+  font-family: "Signika Negative", "Rambla", sans-serif;
   font-size: 2em;
   margin-top: 2.2em; }
   @media all and (min-width: 960px) and (max-width: 1024px) {
@@ -1071,7 +1080,7 @@ header {
   z-index: 800;
   width: 100%;
   height: 6em;
-  background: rgba(248, 248, 248, 0.3);
+  background: #f8f8f8;
   padding: 0; }
   @media all and (min-width: 640px) and (max-width: 768px) {
     header {
@@ -1079,14 +1088,17 @@ header {
   @media all and (min-width: 426px) and (max-width: 639px) {
     header {
       position: fixed;
+      background: rgba(248, 248, 248, 0.3);
       height: 4em; } }
   @media all and (min-width: 321px) and (max-width: 425px) {
     header {
       position: fixed;
+      background: rgba(248, 248, 248, 0.3);
       height: 4em; } }
   @media all and (max-width: 320px) {
     header {
       position: fixed;
+      background: rgba(248, 248, 248, 0.3);
       height: 4em; } }
 
 footer {
@@ -1103,8 +1115,9 @@ footer {
   padding-top: 2em;
   color: #FFF; }
   .my-contact p {
-    font-family: 'Liquide';
-    margin-top: 1em; }
+    font-family: "Signika Negative", "Rambla", sans-serif;
+    margin-top: 1em;
+    text-transform: uppercase; }
   @media all and (min-width: 960px) and (max-width: 1024px) {
     .my-contact {
       width: 44%;
@@ -1234,7 +1247,7 @@ footer {
       height: 22em; } }
   @media all and (max-width: 320px) {
     .head-hero {
-      height: 19em; } }
+      height: 20em; } }
   .head-hero .hero-bg-gray {
     z-index: 20;
     width: 100%;
@@ -1251,7 +1264,7 @@ footer {
         height: 23em; } }
     @media all and (max-width: 320px) {
       .head-hero .hero-bg-gray {
-        height: 21em; } }
+        height: 22em; } }
     .head-hero .hero-bg-gray:before {
       content: '';
       position: absolute;
@@ -1269,7 +1282,7 @@ footer {
           margin: 18.6em 0 0 55%; } }
       @media all and (max-width: 320px) {
         .head-hero .hero-bg-gray:before {
-          margin: 16.6em 0 0 55%; } }
+          margin: 17.6em 0 0 55%; } }
     .head-hero .hero-bg-gray:after {
       content: '';
       position: absolute;
@@ -1287,7 +1300,7 @@ footer {
           margin: 20.9em 0 0 57%; } }
       @media all and (max-width: 320px) {
         .head-hero .hero-bg-gray:after {
-          margin: 18.9em 0 0 57%; } }
+          margin: 19.9em 0 0 57%; } }
   .head-hero .hero-bg-line {
     z-index: 10;
     width: 100%;
@@ -1305,7 +1318,7 @@ footer {
         transform: skewY(6deg) scaleY(1.5); } }
     @media all and (max-width: 320px) {
       .head-hero .hero-bg-line {
-        margin-top: 18.5em;
+        margin-top: 19.5em;
         transform: skewY(8deg) scaleY(1.7); } }
 
 .hero-title {
@@ -1339,20 +1352,35 @@ footer {
   @media all and (max-width: 320px) {
     .hero-title {
       width: 90%;
-      margin-top: 6em;
+      margin-top: 7em;
       margin-left: 5%; } }
   .hero-title .my-name {
-    font-size: 5em;
-    font-family: "Liquide", "Ruda";
-    color: #896BDE;
-    margin-bottom: .4em;
-    text-transform: uppercase; }
+    width: 60%;
+    margin-bottom: 1em; }
+    @media all and (min-width: 960px) and (max-width: 1024px) {
+      .hero-title .my-name {
+        width: 70%;
+        margin-bottom: 1em; } }
+    @media all and (min-width: 769px) and (max-width: 959px) {
+      .hero-title .my-name {
+        width: 70%;
+        margin-bottom: 1em; } }
+    @media all and (min-width: 640px) and (max-width: 768px) {
+      .hero-title .my-name {
+        width: 70%;
+        margin-bottom: 1em; } }
+    @media all and (min-width: 426px) and (max-width: 639px) {
+      .hero-title .my-name {
+        width: 70%;
+        margin-bottom: 1em; } }
     @media all and (min-width: 321px) and (max-width: 425px) {
       .hero-title .my-name {
-        font-size: 3.5em; } }
+        width: 70%;
+        margin-bottom: 1em; } }
     @media all and (max-width: 320px) {
       .hero-title .my-name {
-        font-size: 3em; } }
+        width: 70%;
+        margin-bottom: 1em; } }
   .hero-title .my-job {
     font-size: 3em;
     font-family: 'Roboto';
@@ -1370,18 +1398,21 @@ footer {
   width: 17%;
   position: absolute;
   margin: 10em 0 0 68%; }
+  @media all and (min-width: 426px) and (max-width: 639px) {
+    .hero-bg-panda {
+      margin: 9em 0 0 64%; } }
   @media all and (min-width: 321px) and (max-width: 425px) {
     .hero-bg-panda {
       margin: 10em 0 0 58%; } }
   @media all and (max-width: 320px) {
     .hero-bg-panda {
-      margin: 8em 0 0 53%; } }
+      margin: 9em 0 0 53%; } }
 
 .hero-bg-panda-hi {
   width: 3em;
   height: 3em;
   font-size: 2.2em;
-  font-family: "Liquide", "Ruda";
+  font-family: "Signika Negative", "Rambla", sans-serif;
   color: #FFF;
   background: #E2D6FD;
   padding: 1em;
@@ -1390,15 +1421,15 @@ footer {
   transform: rotate(10deg); }
   @media all and (min-width: 426px) and (max-width: 639px) {
     .hero-bg-panda-hi {
-      transform: scale(0.9) rotate(10deg);
+      transform: scale(0.8) rotate(10deg);
       margin-left: 0.8em; } }
   @media all and (min-width: 321px) and (max-width: 425px) {
     .hero-bg-panda-hi {
-      transform: scale(0.9);
+      transform: scale(0.7);
       margin-left: 1em; } }
   @media all and (max-width: 320px) {
     .hero-bg-panda-hi {
-      transform: scale(0.7);
+      transform: scale(0.6);
       margin-left: 1em; } }
   .hero-bg-panda-hi:before {
     content: '';
@@ -1494,7 +1525,7 @@ footer {
     margin: .6em 15%;
     text-align: center;
     font-size: 2em;
-    font-family: "Liquide", "Ruda";
+    font-family: "Signika Negative", "Rambla", sans-serif;
     color: #FFF; }
     @media all and (min-width: 769px) and (max-width: 959px) {
       .belief-content .belief-text {
@@ -1627,7 +1658,7 @@ footer {
       margin-top: 1em;
       padding: .5em 0.7em; } }
   .service-item .service-header {
-    font-family: "Liquide", "Ruda";
+    font-family: "Signika Negative", "Rambla", sans-serif;
     font-size: 1.1em !important;
     letter-spacing: .1em; }
     @media all and (min-width: 640px) and (max-width: 768px) {
@@ -1703,7 +1734,7 @@ footer {
     width: 60%;
     text-align: center;
     margin-left: 50%;
-    font-family: "Liquide", "Ruda";
+    font-family: "Signika Negative", "Rambla", sans-serif;
     color: #896BDE;
     font-size: .7em; }
     @media all and (min-width: 960px) and (max-width: 1024px) {
@@ -1962,10 +1993,10 @@ footer {
 .profile-name {
   font-size: 2em;
   margin-bottom: 1em;
-  font-family: "Liquide", "Ruda"; }
+  font-family: "Signika Negative", "Rambla", sans-serif; }
 
 .profile-education {
-  font-family: "Liquide", "Ruda";
+  font-family: "Signika Negative", "Rambla", sans-serif;
   margin-bottom: .5em; }
 
 .work-experience {
@@ -2005,7 +2036,7 @@ footer {
   .experience .work-company {
     float: left;
     width: 80%;
-    font-family: "Liquide", "Ruda";
+    font-family: "Signika Negative", "Rambla", sans-serif;
     font-size: .9em;
     font-weight: 900;
     margin-bottom: .3em; }
