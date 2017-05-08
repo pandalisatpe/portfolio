@@ -713,7 +713,8 @@ nav {
   float: left;
   display: block;
   position: fixed;
-  width: 10%;
+  width: 5%;
+  margin-left: 1em;
   margin-top: 25%;
   z-index: 900; }
   #social-nav ul li {
