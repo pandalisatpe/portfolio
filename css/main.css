@@ -468,6 +468,8 @@ body {
   float: left;
   position: absolute;
   width: 20%; }
+  .brand a:active {
+    background: none; }
   .brand .brand-logo {
     width: 7em;
     margin: 1em 1.2em;
@@ -608,6 +610,8 @@ nav {
   	}
   }
   */ }
+  .mobile-nav a:active {
+    background: none; }
   .mobile-nav .navicon {
     text-align: right;
     color: #FFF;
@@ -764,6 +768,10 @@ nav {
 .wrapper {
   width: 80%;
   margin: 0 10%; }
+  @media all and (min-width: 426px) and (max-width: 639px) {
+    .wrapper {
+      width: 86%;
+      margin: 0 7%; } }
   @media all and (min-width: 321px) and (max-width: 425px) {
     .wrapper {
       width: 90%;
@@ -987,10 +995,10 @@ nav {
       top: 40%; } }
   @media all and (min-width: 321px) and (max-width: 425px) {
     .slider-button {
-      top: 90%; } }
+      top: 38%; } }
   @media all and (max-width: 320px) {
     .slider-button {
-      top: 90%; } }
+      top: 36%; } }
 
 .swiper-button-prev {
   width: 1em;
@@ -1001,12 +1009,15 @@ nav {
   .swiper-button-prev:hover {
     padding-top: .94em;
     text-shadow: 0.05em 0.1em 0.1em #222222; }
+  @media all and (min-width: 426px) and (max-width: 639px) {
+    .swiper-button-prev {
+      left: -2%; } }
   @media all and (min-width: 321px) and (max-width: 425px) {
     .swiper-button-prev {
-      left: 20%; } }
+      left: -3%; } }
   @media all and (max-width: 320px) {
     .swiper-button-prev {
-      left: 20%; } }
+      left: -3%; } }
 
 .swiper-button-next {
   width: 1em;
@@ -1018,12 +1029,15 @@ nav {
   .swiper-button-next:hover {
     padding-top: .94em;
     text-shadow: -0.05em 0.1em 0.1em #E2D6FD; }
+  @media all and (min-width: 426px) and (max-width: 639px) {
+    .swiper-button-next {
+      right: -2%; } }
   @media all and (min-width: 321px) and (max-width: 425px) {
     .swiper-button-next {
-      right: 20%; } }
+      right: -3%; } }
   @media all and (max-width: 320px) {
     .swiper-button-next {
-      right: 20%; } }
+      right: -3%; } }
 
 .swiper-pagination {
   position: absolute;
@@ -1058,7 +1072,7 @@ nav {
     .swiper-pagination {
       font-size: 1em;
       right: 48%;
-      top: 93%; } }
+      top: 95%; } }
   .swiper-pagination .swiper-pagination-total {
     display: block;
     position: absolute;
@@ -1348,7 +1362,7 @@ footer {
     .hero-title {
       width: 90%;
       margin-top: 6em;
-      margin-left: 8%; } }
+      margin-left: 6%; } }
   @media all and (max-width: 320px) {
     .hero-title {
       width: 90%;
@@ -1385,6 +1399,12 @@ footer {
     font-size: 3em;
     font-family: 'Roboto';
     color: #0C0F81; }
+    @media all and (min-width: 426px) and (max-width: 639px) {
+      .hero-title .my-job {
+        font-size: 2.5em; } }
+    @media all and (min-width: 321px) and (max-width: 425px) {
+      .hero-title .my-job {
+        font-size: 2.5em; } }
     @media all and (max-width: 320px) {
       .hero-title .my-job {
         font-size: 2.5em; } }
@@ -1392,6 +1412,12 @@ footer {
     font-size: 1em;
     font-family: 'Roboto';
     color: #0C0F81; }
+    @media all and (min-width: 321px) and (max-width: 425px) {
+      .hero-title .my-city {
+        font-size: .9em; } }
+    @media all and (max-width: 320px) {
+      .hero-title .my-city {
+        font-size: .9em; } }
 
 .hero-bg-panda {
   z-index: 50;
@@ -1400,14 +1426,24 @@ footer {
   margin: 10em 0 0 68%; }
   @media all and (min-width: 426px) and (max-width: 639px) {
     .hero-bg-panda {
+      display: none;
       margin: 9em 0 0 64%; } }
   @media all and (min-width: 321px) and (max-width: 425px) {
     .hero-bg-panda {
+      display: none;
       margin: 10em 0 0 58%; } }
   @media all and (max-width: 320px) {
     .hero-bg-panda {
+      display: none;
       margin: 9em 0 0 53%; } }
 
+@keyframes pandahi {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg); }
+  100% {
+    opacity: 1;
+    transform: rotate(10deg); } }
 .hero-bg-panda-hi {
   width: 3em;
   height: 3em;
@@ -1416,6 +1452,8 @@ footer {
   color: #FFF;
   background: #E2D6FD;
   padding: 1em;
+  opacity: 0;
+  animation: pandahi 2s ease 2s 1 forwards;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   transform: rotate(10deg); }
@@ -1452,10 +1490,19 @@ footer {
         border-radius: 80% 0 80% 0;
         transform: rotate(-60deg) scale(0.8); } }
 
+@keyframes pandawalk {
+  0% {
+    opacity: 0;
+    margin: 1.5em 0 0 4em; }
+  100% {
+    opacity: 1;
+    margin: 2em 0 0 2em; } }
 .hero-bg-panda-walk {
   width: 8em;
+  opacity: 0;
   position: absolute;
-  margin: 2em 0 0 2em; }
+  margin: 1.5em 0 0 4em;
+  animation: pandawalk 2s ease 1s 1 forwards; }
   @media all and (min-width: 321px) and (max-width: 425px) {
     .hero-bg-panda-walk {
       margin: 1em 0 0 1em; } }
@@ -1782,12 +1829,12 @@ footer {
       height: 100em; } }
   @media all and (min-width: 321px) and (max-width: 425px) {
     .my-profile {
-      height: 105em;
-      margin: 4em 0 3em; } }
+      height: 104em;
+      margin: 2em 0 1em; } }
   @media all and (max-width: 320px) {
     .my-profile {
-      height: 115em;
-      margin: 4em 0 3em; } }
+      height: 112em;
+      margin: 2em 0 1em; } }
 
 .about-nav {
   width: 74%;
@@ -1985,7 +2032,7 @@ footer {
   @media all and (max-width: 320px) {
     .profile-introduction {
       width: 90%;
-      height: 35em;
+      height: 36em;
       padding: 0;
       margin: 1em 5%;
       line-height: 1.7em; } }
